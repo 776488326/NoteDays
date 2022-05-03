@@ -1,5 +1,3 @@
-# 常用语法
-
 ## 基础类型
 
 ### 布尔类型
@@ -90,6 +88,28 @@ function say(str:string|number){
         return (str as string).length;
     }else{
         return str.toString().length;
+    }
+}
+```
+
+### 类型
+```ts
+ name：string
+```
+
+### 接口
+```ts
+interface persion{
+    first:string,
+    last:string
+}
+```
+
+### 类
+```ts
+class persion{
+    constructor(first:string,last:string){
+
     }
 }
 ```
