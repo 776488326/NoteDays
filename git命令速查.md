@@ -56,6 +56,10 @@ macos：brew install git
 
 冲突合并：当不同分支修改了同一文件后，在合并时会发生冲突
 
+创建gitignore：touch .gitignore
+
+应用gitignore：
+
 
 
 ## GitHub
