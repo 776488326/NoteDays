@@ -47,6 +47,16 @@ module.exports = {
             {
                 test: /\.css$/,         //解析css
                 use: ["style-loader","css-loader"] //从右往左依次执行
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use:{
+                    loader: "babel-loader",
+                    options:{
+                        presets:["@babel/preset-env"]
+                    }
+                }
             }
         ]
     }
