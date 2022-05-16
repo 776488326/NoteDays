@@ -1,9 +1,21 @@
 {
-  "devDependencies": {
-    "css-loader": "^6.7.1",
-    "html-webpack-plugin": "^5.5.0",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1"
-  }
+  "name": "notedays",
+  "description": "不积跬步无以至千里，不积小流无以成江海。",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/776488326/NoteDays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/776488326/NoteDays/issues"
+  },
+  "homepage": "https://github.com/776488326/NoteDays#readme"
 }

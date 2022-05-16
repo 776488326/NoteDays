@@ -57,7 +57,31 @@ module.exports = {
                         presets:["@babel/preset-env"]
                     }
                 }
+            },
+            {
+                test:/\.(png|jpg|gif)$/,
+                use:[{
+                    loader:"file-loader",
+                    options:{
+                        publicPath:"../dist/images",   // 决定图片的url路径
+                        outputPath:"images",           // 决定文件本地输出路径
+                        name:"[hash:5].[ext]"          // 修改文件名，扩展名
+                    }
+                }]
             }
+        ]
+    },
+    resolve:{
+        alias:{
+            "&":path.resolve(__dirname,"./src")
+        },
+        extensions: [".json",".js",".vue"]
+    },
+    externalsType: "扩展模块的类型（此处为script）",
+    externals:{
+        jquery:[
+            "cdn链接",
+            "第三方模块暴露的标识符"
         ]
     }
 }

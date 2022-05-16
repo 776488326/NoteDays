@@ -52,6 +52,8 @@ macos：brew install git
 
 切换分支：git checkout 分支名
 
+删除分支：git branch -d 分支名（如果删除失败，改为-D）
+
 合并分支：git merge  分支名 ————》会默认合并到当前的分支下
 
 冲突合并：当不同分支修改了同一文件后，在合并时会发生冲突
