@@ -2,8 +2,8 @@ const htmlwebpackplugin = require("html-webpack-plugin");
 module.exports = {
     entry: "入口文件",
     output:{
-        filename: "打包生成的文件名",
-        path:path.resolve(__dirname,"./dist"),
+        filename: "打包生成的文件名",  // 入口文件打包生成的目录和文件名
+        path:path.resolve(__dirname,"./dist"),  // 打包生成文件根目录
         clean: true, //打包前删除上次生成的打包文件
         assetModuleFilename: "images/[contenthash][ext]" // 设置导入的资源文件夹，文件名，扩展名
     },
@@ -18,7 +18,7 @@ module.exports = {
             inject: "打包的js文件引入的位置"
         })
     ],
-
+    // 打包生成在内存中，不会在dist中出现。
     devServer: {  //实时更新
         static: "./dist"
     },

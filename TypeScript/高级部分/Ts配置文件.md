@@ -48,7 +48,8 @@
     "declarationDir": "path",
     // 只生成声明文件
     "emitDecalrationOnly": true,
-    ""
+    // 相对路径基础路径
+    "baseUrl": "./",
 }
 ```
 

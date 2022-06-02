@@ -12,7 +12,7 @@
 - 不会生成map文件
 - 可以实现资源的映射
 
-### source-map
+### source-map（生产推荐）
 
 - 不通过eval包裹，在末尾注释sourceMapURL值为生成的map文件的路径
 - 会生成map文件
@@ -40,6 +40,6 @@
 
 - 与source-map的区别是map不包含列记录
 
-### cheap-module-source-map（推荐）
+### cheap-module-source-map（开发推荐）
 
 - 与cheap-module-source-map的区别是loader的sourcemap也只被映射为对应行
